@@ -137,14 +137,14 @@ export class Workspaces {
             ) {
                 this.focusMostRecentWindowOnWorkspace(workspace);
             } else {
-                Main.overview.toggle();
+                // Main.overview.toggle();
             }
         } else {
             if (workspace) {
                 workspace.activate(global.get_current_time());
                 this.focusMostRecentWindowOnWorkspace(workspace);
                 if (!Main.overview.visible && !this.workspaces[index].hasWindows) {
-                    Main.overview.show();
+                    // Main.overview.show();
                 }
             }
         }
@@ -175,7 +175,7 @@ export class Workspaces {
 
     _addStaticWorkspace() {
         global.workspace_manager.append_new_workspace(true, global.get_current_time());
-        Main.overview.show();
+        // Main.overview.show();
     }
 
     removeWorkspace(index: number) {
