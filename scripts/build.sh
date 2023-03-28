@@ -2,7 +2,7 @@
 
 set -e
 
-PACK_FILE="space-bar@luchrioh.shell-extension.zip"
+PACK_FILE="workspace-bar@jeusto.zip"
 
 function clear() (
 	if [ -d target ]; then
